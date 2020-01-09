@@ -1,0 +1,1121 @@
+<<<<<<< HEAD
+@-ms-viewport {
+    width: device-width;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white; /* #D6DBE0 For Lighter Grey */
+    margin: 0;
+}
+
+/* Container to keep image centered */
+.imgcontainer {
+    text-align: center;
+    margin: 12px 0 12px 0;
+    position: relative;
+}
+
+.Rheem_header {
+    width: 100%;
+}
+
+.imagefront {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    max-width: 6%;
+    max-height: auto;
+}
+
+/* Start Signup CSS */
+
+.navbar {
+    text-align: center;
+}
+
+    .navbar img {
+        max-width: 50%;
+        max-height: auto;
+    }
+
+.tierheader {
+    /*border-bottom-left-radius: 50% 50%;
+		border-bottom-right-radius: 50% 50%;
+		background-color: #e70033;
+		color: #fff;
+		height: 150px;
+		position: relative;
+		font-size: 43px;
+		text-align: center;
+		margin-top: -1px;
+		margin-bottom: 20px;*/
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 43px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Format Box For Sign Up Form */
+
+.sbox {
+    margin: auto;
+    background: rgb(235, 239, 242);
+    width: 70%;
+    height: auto;
+    border-radius: 6px;
+    padding: 20px 0 40px 0;
+    border: rgb(230, 234, 238) 4px solid;
+    color: rgb(110, 125, 140);
+    text-align: center;
+}
+
+    .sbox label {
+        display: block;
+        vertical-align: top;
+        color: rgb(110, 125, 140);
+    }
+
+    .sbox select {
+        width: 48%;
+        padding: 12px 0px;
+        margin: 0px 0px 30px 0px;
+        display: inline-block;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: rgb(110, 125, 140);
+        border-radius: 2px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(110, 125, 140);
+    }
+
+        .sbox select::ms-expand {
+            display: none;
+        }
+
+        .sbox select.minimal {
+            background-image: linear-gradient(45deg, transparent 50%, rgb(110, 125, 140) 50%), linear-gradient(135deg, rgb(110, 125, 140) 50%, transparent 50%), linear-gradient(to right, rgb(110, 125, 140), rgb(110, 125, 140));
+            background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+            background-size: 5px 5px, 5px 5px, 1px 1.5em;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+        }
+
+            .sbox select.minimal:focus {
+                background-image: linear-gradient(45deg, rgb(110, 125, 140) 50%, transparent 50%), linear-gradient(135deg, transparent 50%, rgb(110, 125, 140) 50%), linear-gradient(to right, rgb(110, 125, 140), rgb(110, 125, 140));
+                background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - 2.5em) 0.5em;
+                background-size: 5px 5px, 5px 5px, 1px 1.5em;
+                background-repeat: no-repeat;
+                outline: none;
+                border-bottom: 2px solid rgb(163, 178, 194);
+                border-radius: 2px;
+            }
+
+        .sbox select:focus {
+            border-bottom: 2px solid #e70033;
+            outline: none;
+        }
+
+    .sbox input[type=text] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        /*border: 1px solid rgb(230, 234, 238);*/
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: rgb(110, 125, 140);
+        border-radius: 2px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        opacity: 0.8;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(110, 125, 140);
+    }
+
+    .sbox input[type=email] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        /*border: 1px solid rgb(230, 234, 238);*/
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: rgb(110, 125, 140);
+        border-radius: 2px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        opacity: 0.8;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(110, 125, 140);
+    }
+
+    .sbox input[type=tel] {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        /*border: 1px solid rgb(230, 234, 238);*/
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        color: rgb(110, 125, 140);
+        border-radius: 2px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        opacity: 0.8;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid rgb(110, 125, 140);
+    }
+
+    .sbox input[type=radio] {
+        display: inline-block;
+    }
+
+    .sbox fieldset {
+        width: 70%;
+        border: none;
+        margin: auto;
+        vertical-align: middle;
+    }
+
+
+/* Container for buttons */
+.radio-container {
+    font-size: 14px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 24%;
+    width: 50%;
+}
+
+    .radio-container input {
+        position: relative;
+        vertical-align: top;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        /* Remove deafault radio button 
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;*/
+        /* Custom radio button 
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background-color: #eee;
+		border: 2px solid rgb(110, 125, 140);*/
+    }
+
+        .radio-container input:checked {
+            background-color: #e70033;
+        }
+
+.sbox input:focus {
+    outline: none;
+    border-bottom: 2px solid #e70033;
+}
+
+/* Edit Placeholder CSS */
+/* Chrome/Opera/Safari */
+.sbox input::-webkit-input-placeholder {
+    font-size: 14px;
+}
+
+/* Firefox 19+ */
+.sbox input::-moz-placeholder {
+    font-size: 14px;
+    opacity: 1;
+}
+
+/* IE 10+ */
+.sbox input:-ms-input-placeholder {
+    font-size: 14px;
+}
+
+/* Firefox 18- */
+.sbox input:-moz-placeholder {
+    opacity: 1;
+    font-size: 14px;
+}
+
+.infoHeader {
+    font-size: 28px;
+}
+
+/* Submit Button */
+
+.btnSub {
+    background: #e70033;
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 4px;
+    border: rgb(110, 125, 140) 1px solid;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 16px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+    .btnSub:hover {
+        opacity: 0.8;
+    }
+
+/* Floating Label */
+
+.floating-label {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.floating-input, .floating-select {
+    font-size: 14px;
+    padding: 4px 4px;
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #757575;
+}
+
+    .floating-input:focus, .floating-select:focus {
+        outline: none;
+        border-bottom: 2px solid #5264AE;
+    }
+
+label {
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 25%;
+    top: 5px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+    top: -18px;
+    font-size: 14px;
+    color: #e70033;
+}
+
+.floating-select:focus ~ label, .floating-select:not([value=""]):valid ~ label {
+    top: -18px;
+    font-size: 14px;
+    color: #e70033;
+}
+
+/* active state */
+.floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after, .floating-select:focus ~ .bar:before, .floating-select:focus ~ .bar:after {
+    width: 50%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.floating-textarea {
+    min-height: 30px;
+    max-height: 260px;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+/* active state */
+.floating-input:focus ~ .highlight, .floating-select:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+}
+
+/* animation */
+@-webkit-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@-moz-keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+/* End Floating Label */
+/* Adjust Width Appropriately for Mobile */
+
+@media only screen and (max-width: 768px) {
+    .box {
+        width: 90%;
+        padding: 10px 0px 0px 0px;
+        border: none;
+    }
+
+    .sbox {
+        width: 90%;
+        padding: 10px 0px 0px 0x;
+        border: none;
+    }
+
+        .sbox label {
+            width: 25%;
+        }
+
+        .sbox input[type=text] {
+            width: 80%;
+        }
+
+        .sbox input[type=email] {
+            width: 80%;
+        }
+
+        .sbox input[type=tel] {
+            width: 80%;
+        }
+
+        .sbox select {
+            width: 80%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+    img.Rheem {
+        max-width: 25%;
+        max-height: auto;
+    }
+
+    img.navLogo {
+        width: 50px;
+        height: auto;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    /* Edit Placeholder CSS */
+    /* Chrome/Opera/Safari */
+    .sbox input::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+
+    /* Firefox 19+ */
+    .sbox input::-moz-placeholder {
+        font-size: 12px;
+        opacity: 1;
+    }
+
+    /* IE 10+ */
+    .sbox input:-ms-input-placeholder {
+        font-size: 12px;
+    }
+
+    /* Firefox 18- */
+    .sbox input:-moz-placeholder {
+        opacity: 1;
+        font-size: 12px;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
+    }
+
+    .navbar img {
+        max-width: 20%;
+        max-height: auto;
+    }
+
+    .centered_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+    }
+
+    label {
+        left: 8%;
+        top: 5px;
+        font-size: 10px;
+    }
+
+    .Rheem_header {
+        height: 200%;
+    }
+
+    .imagefront {
+        top: 5%;
+    }
+
+    .radio-container {
+        font-size: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        left: 8%;
+        width: 75%;
+    }
+
+        .radio-container input {
+            position: relative;
+            vertical-align: top;
+            text-align: center;
+        }
+
+    .floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+        font-size: 10px;
+    }
+
+    .sbox select {
+        font-size: 10px;
+        width: 74%;
+    }
+}
+
+
+/* Adjust Width Appropriately for Mobile Landscape View */
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .box {
+        width: 60%;
+        padding: 5px 0px 0px 0px;
+        border: none;
+    }
+
+    img.Rheem {
+        max-width: 25%;
+        max-height: auto;
+    }
+
+    img.navLogo {
+        width: 50px;
+        height: auto;
+    }
+
+    .column {
+        width: 100%;
+    }
+=======
+@-ms-viewport {
+		width: device-width;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: white;   /* #D6DBE0 For Lighter Grey */
+	margin: 0;
+}
+
+/* Container to keep image centered */
+.imgcontainer {
+		text-align: center;
+		margin: 12px 0 12px 0;
+		position: relative;
+}
+
+.Rheem_header {
+		width: 100%;
+}
+
+.imagefront {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		z-index: 1;
+		max-width: 6%;
+		max-height: auto;
+}
+
+/* Start Signup CSS */
+
+.navbar {
+		text-align:center;
+}
+
+.navbar img {
+		max-width: 50%;
+		max-height: auto;
+}
+
+.tierheader {
+		/*border-bottom-left-radius: 50% 50%;
+		border-bottom-right-radius: 50% 50%;
+		background-color: #e70033;
+		color: #fff;
+		height: 150px;
+		position: relative;
+		font-size: 43px;
+		text-align: center;
+		margin-top: -1px;
+		margin-bottom: 20px;*/
+		position: relative;
+		text-align: center;
+		color: white;
+}
+
+.centered_text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 43px;
+}
+
+.column {
+		float: left;
+		width: 50%;
+		
+}
+
+.row:after{
+		content:"";
+		display: table;
+		clear: both;
+}
+
+/* Format Box For Sign Up Form */
+
+.sbox {
+		margin: auto;
+		background: rgb(235, 239, 242);
+		width: 70%;
+		height: auto;
+		border-radius: 6px;
+		padding: 20px 0 40px 0;
+		border: rgb(230, 234, 238) 4px solid;
+		color: rgb(110, 125, 140);
+		text-align: center;
+}
+
+.sbox label {
+		display: block;
+		vertical-align: top;
+		color: rgb(110, 125, 140);
+}
+
+.sbox select {
+		width: 48%;
+		padding: 12px 0px;
+		margin: 0px 0px 30px 0px;
+		display: inline-block;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		color: rgb(110, 125, 140);
+		border-radius: 2px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid rgb(110, 125, 140);
+}
+
+.sbox select::ms-expand {
+		display: none;
+}
+
+.sbox select.minimal {
+		background-image:
+			linear-gradient(45deg, transparent 50%, rgb(110, 125, 140) 50%),
+			linear-gradient(135deg, rgb(110, 125, 140) 50%, transparent 50%),
+			linear-gradient(to right, rgb(110, 125, 140), rgb(110, 125, 140));
+		background-position:
+			calc(100% - 20px) calc(1em + 2px),
+			calc(100% - 15px) calc(1em + 2px),
+			calc(100% - 2.5em) 0.5em;
+		background-size:
+			5px 5px,
+			5px 5px,
+			1px 1.5em;
+		background-repeat: no-repeat;
+		opacity: 0.8;
+}
+
+.sbox select.minimal:focus {
+		background-image:
+			linear-gradient(45deg, rgb(110, 125, 140) 50%, transparent 50%),
+			linear-gradient(135deg, transparent 50%, rgb(110, 125, 140) 50%),
+			linear-gradient(to right, rgb(110, 125, 140), rgb(110, 125, 140));
+		background-position:
+			calc(100% - 15px) 1em,
+			calc(100% - 20px) 1em,
+			calc(100% - 2.5em) 0.5em;
+		background-size:
+			5px 5px,
+			5px 5px,
+			1px 1.5em;
+		background-repeat: no-repeat;
+		outline: none;
+		border-bottom: 2px solid rgb(163, 178, 194);
+		border-radius: 2px;
+}
+
+.sbox select:focus {
+		border-bottom: 2px solid #e70033;
+		outline: none;
+}
+
+.sbox input[type=text] {
+		width: 50%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		/*border: 1px solid rgb(230, 234, 238);*/
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		color: rgb(110, 125, 140);
+		border-radius: 2px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		opacity: 0.8;
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid rgb(110, 125, 140);
+}	
+
+.sbox input[type=email] {
+		width: 50%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		/*border: 1px solid rgb(230, 234, 238);*/
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		color: rgb(110, 125, 140);
+		border-radius: 2px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		opacity: 0.8;
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid rgb(110, 125, 140);
+}	
+
+.sbox input[type=tel] {
+		width: 50%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		/*border: 1px solid rgb(230, 234, 238);*/
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		color: rgb(110, 125, 140);
+		border-radius: 2px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		opacity: 0.8;
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid rgb(110, 125, 140);
+}	
+
+.sbox input[type=radio] {
+		display: inline-block;
+}
+
+.sbox fieldset {
+		width: 70%;
+		border: none;
+		margin: auto;
+		vertical-align: middle;
+}
+
+
+/* Container for buttons */
+.radio-container {
+		font-size: 14px;
+		margin-bottom: 30px;
+		position: relative;
+		left: 24%;
+		width: 50%;
+}
+
+.radio-container input {
+		position: relative;
+		vertical-align: top;
+		display: inline-block;
+		text-align: center;
+		text-decoration: none;
+		cursor: pointer;
+		/* Remove deafault radio button 
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;*/
+		/* Custom radio button 
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		background-color: #eee;
+		border: 2px solid rgb(110, 125, 140);*/
+}
+
+.radio-container input:checked {
+		background-color: #e70033;
+}
+
+.sbox input:focus {
+		outline: none;
+		border-bottom: 2px solid #e70033;
+}
+
+/* Edit Placeholder CSS */
+/* Chrome/Opera/Safari */
+.sbox input::-webkit-input-placeholder {
+		font-size: 14px;
+}
+
+/* Firefox 19+ */
+.sbox input::-moz-placeholder {
+		font-size: 14px;
+		opacity: 1;
+}
+
+/* IE 10+ */
+.sbox input:-ms-input-placeholder {
+		font-size: 14px;
+}
+
+/* Firefox 18- */
+.sbox input:-moz-placeholder {
+		opacity: 1;
+		font-size: 14px;
+}
+
+.infoHeader {
+		font-size: 28px;
+}
+
+/* Submit Button */
+
+.btnSub {
+		background: #e70033;
+		width: 50%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		color: white;
+		border-radius: 4px;
+		border: rgb(110, 125, 140) 1px solid;
+		
+		margin-top: 40px;
+		margin-bottom: 20px;
+		margin-left: 16px;
+		font-weight: bold;
+		font-size: 18px;
+}
+
+.btnSub:hover {
+		opacity: 0.8;
+}
+
+/* Floating Label */
+
+.floating-label { 
+  position:relative; 
+  margin-bottom:30px; 
+}
+.floating-input , .floating-select {
+  font-size:14px;
+  padding:4px 4px;
+  display:inline-block;
+  width:100%;
+  height:30px;
+  background-color: transparent;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+.floating-input:focus , .floating-select:focus {
+     outline:none;
+     border-bottom:2px solid #5264AE; 
+}
+
+label {
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:25%;
+  top:5px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+  top:-18px;
+  font-size:14px;
+  color:#e70033;
+}
+
+.floating-select:focus ~ label , .floating-select:not([value=""]):valid ~ label {
+  top:-18px;
+  font-size:14px;
+  color:#e70033;
+}
+
+/* active state */
+.floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after, .floating-select:focus ~ .bar:before, .floating-select:focus ~ .bar:after {
+  width:50%;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.floating-textarea {
+   min-height: 30px;
+   max-height: 260px; 
+   overflow:hidden;
+  overflow-x: hidden; 
+}
+
+/* active state */
+.floating-input:focus ~ .highlight , .floating-select:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* animation */
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+/* End Floating Label */
+/* Adjust Width Appropriately for Mobile */
+
+@media only screen and (max-width: 768px) {
+		.box {
+			width: 90%;
+			padding: 10px 0px 0px 0px;
+			border: none;
+		}
+		
+		.sbox {
+			width: 90%;
+			padding: 10px 0px 0px 0x;
+			border: none;
+		}
+		
+		.sbox label {
+			width: 25%;
+		}
+		
+		.sbox input[type=text] {
+			width: 80%;
+		}
+		
+		.sbox input[type=email] {
+			width: 80%;
+		}
+		
+		.sbox input[type=tel] {
+			width: 80%;
+		}
+		
+		.sbox select {
+			width: 80%;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		
+		img.Rheem {
+			max-width: 25%;
+			max-height: auto;
+		}
+		
+		img.navLogo {
+			width: 50px;
+			height: auto;
+		}
+		
+		.column {
+			width: 100%;
+		}
+
+		/* Edit Placeholder CSS */
+		/* Chrome/Opera/Safari */
+		.sbox input::-webkit-input-placeholder {
+				font-size: 12px;
+		}
+
+		/* Firefox 19+ */
+		.sbox input::-moz-placeholder {
+				font-size: 12px;
+				opacity: 1;
+		}
+
+		/* IE 10+ */
+		.sbox input:-ms-input-placeholder {
+				font-size: 12px;
+		}
+
+		/* Firefox 18- */
+		.sbox input:-moz-placeholder {
+				opacity: 1;
+				font-size: 12px;
+		}
+		
+		.navbar a {
+				float: none;
+				display: block;
+		}
+
+		.navbar img {
+				max-width: 20%;
+				max-height: auto;
+		}
+
+		.centered_text {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 20px;
+		}
+		
+		label {
+		  left:8%;
+		  top:5px;
+		  font-size: 10px;
+		}
+		
+		.Rheem_header {
+				height: 200%;
+		}
+		
+		.imagefront {
+				top: 5%;
+		}
+		
+		.radio-container {
+				font-size: 10px;
+				margin-bottom: 30px;
+				position: relative;
+				left: 8%;
+				width: 75%;
+		}
+
+		.radio-container input {
+				position: relative;
+				vertical-align: top;
+				text-align: center;
+		}
+		
+		.floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+				font-size:10px;
+		}
+		
+		.sbox select {
+				font-size: 10px;
+				width: 74%;
+		}
+}
+
+
+/* Adjust Width Appropriately for Mobile Landscape View */
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+		.box {
+			width: 60%;
+			padding: 5px 0px 0px 0px;
+			border: none;
+		}
+		
+		img.Rheem {
+			max-width: 25%;
+			max-height: auto;
+		}
+		
+		img.navLogo {
+			width: 50px;
+			height: auto;
+		}
+		
+		.column {
+			width: 100%;
+		}
+>>>>>>> master
+}
