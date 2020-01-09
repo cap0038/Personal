@@ -1,0 +1,276 @@
+﻿<!doctype html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename = 'style.css') }}>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <!-- link to the SqPaymentForm library -->
+    <script type="text/javascript" src="https://js.squareup.com/v2/paymentform">
+    </script>
+    <!-- link to the local SqPaymentForm initialization -->
+    <!--script type="text/javascript" src="{{ url_for('static', filename = 'sqpaymentform-basic-test.js') }}"-->
+    <!--/script-->
+    <!-- link to the custom styles for SqPaymentForm -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'sqpaymentform-basic.css') }}">
+
+</head>
+
+<body>
+    <div class="tierheader">
+        <img src={{ url_for('static', filename = 'Rheem_Header.png') }} alt="Customer Sign-Up Form" class="Rheem_header">
+        <img src={{ url_for('static', filename = 'Rheem-Logo.png') }} alt="Rheem" class="imagefront">
+        <div class="centered_text">Customer Sign-Up</div>
+    </div>
+
+    <br><br>
+
+    <div class="sbox">
+
+        <form action="/validate" method="POST">
+            <div class="infoHeader">
+                <b>Customer Information</b>
+                <p style="font-size:13px"></font><font color="red">* </font>= indicates a required field</pstyle="font-size:20px">
+            </div>
+
+            <br><br>
+
+            <div class="floating-label">
+                <input class="floating-input" type="text" name="firstname" placeholder=" " required>
+                <label><font color="red">* </font><i class="fas fa-user"></i>    First Name:</label>
+            </div>
+
+            <div class="floating-label">
+                <input class="floating-input" type="text" name="lastname" placeholder=" " required>
+                <label><font color="red">* </font><i class="far fa-user"></i>    Last Name:</label>
+            </div>
+
+            <div class="floating-label">
+                <input class="floating-input" type="text" name="address" size="40" placeholder=" " required>
+                <label><font color="red">* </font><i class="fas fa-home"></i>    Address:</label>
+            </div>
+
+            <div class="floating-label">
+                <input class="floating-input" type="text" name="addressline2" placeholder=" ">
+                <label><i class="fas fa-street-view"></i>    Address 2 (Optional):</label>
+            </div>
+
+            <div class="floating-label">
+                <input class="floating-input" type="text" name="city" placeholder=" " required>
+                <label><font color="red">* </font><i class="fas fa-city"></i>    City:</label>
+            </div>
+
+            <font color="red">* </font> <i class="fas fa-flag-usa"></i>
+            <select name="state" required>
+                <option value="" selected disabled hidden>Select State</option>
+                <option value="al">Alabama - AL</option>
+                <option value="ak">Alaska - AK</option>
+                <option value="az">Arizona - AZ</option>
+                <option value="ar">Arkansas - AR</option>
+                <option value="ca">California - CA</option>
+                <option value="co">Colorado - CO</option>
+                <option value="ct">Connecticut - CT</option>
+                <option value="dc">District of Columbia - DC</option>
+                <option value="de">Delaware - DE</option>
+                <option value="fl">Florida - FL</option>
+                <option value="ga">Georgia - GA</option>
+                <option value="hi">Hawaii - HI</option>
+                <option value="id">Idaho - ID</option>
+                <option value="il">Illinois - IL</option>
+                <option value="in">Indiana - IN</option>
+                <option value="ia">Iowa - IA</option>
+                <option value="ks">Kansas - KS</option>
+                <option value="ky">Kentucky - KY</option>
+                <option value="la">Louisiana - LA</option>
+                <option value="me">Maine - ME</option>
+                <option value="md">Maryland - MD</option>
+                <option value="ma">Massachusetts - MA</option>
+                <option value="mi">Michigan - MI</option>
+                <option value="mn">Minnesota - MN</option>
+                <option value="ms">Mississippi - MS</option>
+                <option value="mo">Missouri - MO</option>
+                <option value="mt">Montana - MT</option>
+                <option value="ne">Nebraska - NE</option>
+                <option value="nv">Nevada - NV</option>
+                <option value="nh">New Hampshire - NH</option>
+                <option value="nj">New Jersey - NJ</option>
+                <option value="nm">New Mexico - NM</option>
+                <option value="ny">New York - NY</option>
+                <option value="nc">North Carolina - NC</option>
+                <option value="nd">North Dakota - ND</option>
+                <option value="oh">Ohio - OH</option>
+                <option value="ok">Oklahoma - OK</option>
+                <option value="or">Oregon - OR</option>
+                <option value="pa">Pennsylvania - PA</option>
+                <option value="pr">Puerto Rico - PR</option>
+                <option value="ri">Rhode Island - RI</option>
+                <option value="sc">South Carolina - SC</option>
+                <option value="sd">South Dakota - SD</option>
+                <option value="tn">Tennessee - TN</option>
+                <option value="tx">Texas - TX</option>
+                <option value="ut">Utah - UT</option>
+                <option value="vt">Vermont - VT</option>
+                <option value="va">Virginia - VA</option>
+                <option value="wa">Washington - WA</option>
+                <option value="wv">West Virginia - WV</option>
+                <option value="wi">Wisconsin - WI</option>
+                <option value="wy">Wyoming - WY</option>
+            </select>
+
+
+            <div class="floating-label">
+                <input class="floating-input" type="text" name="zipcode" size="13" maxlength="5" placeholder=" " required>
+                <label><font color="red">* </font><i class="fas fa-map-marker-alt"></i>    Zip Code:</label>
+            </div>
+
+            <div class="floating-label">
+                <input class="floating-input" type="email" name="email" placeholder=" " required>
+                <label><font color="red">* </font><i class="far fa-envelope"></i>    E-mail:</label>
+            </div>
+
+            <div class="floating-label">
+                <input class="floating-input" type="tel" name="telephone" placeholder=" " required>
+                <label><font color="red">* </font><i class="fas fa-phone"></i>    Phone Number:</label>
+            </div>
+
+            <div class="infoHeader">
+                <b>Unit Information</b>
+            </div>
+
+            <br><br>
+
+            <div class="radio-container">
+                <font color="red">* </font><b>Select Product Type:</b>
+                <input type="radio" name="producttype" value="waterheater" required>Water Heater
+
+                <input type="radio" name="producttype" value="hvac" required>HVAC
+
+                <input type="radio" name="producttype" value="poolheater" required>Pool Heater
+
+                <input type="radio" name="producttype" value="refrigerator" required>Refrigerator
+            </div>
+
+
+
+            <div class="floating-label"> <font color="red">* </font>
+                <input class="floating-input" type="text" name="serialnumber" size="30" placeholder=" " required>
+                <label>Unit Serial Number</label>
+            </div>
+
+            
+            <div class="floating-label"> <font color="red">* </font>
+                <input class="floating-input" type="text" name="modelnumber" size="30" placeholder=" " required>
+                <label>Unit Model Number</label>
+            </div>
+
+
+
+            Would you like to sign up for up-to-the minute diagnostics?
+            <a href="https://www.rheem.com"> Learn More</a><br>
+            <input type="radio" name="diagnostics" value="yes" onclick="showOrHide('show')"> Yes
+            <input type="radio" name="diagnostics" value="no"> No
+            <br><br>
+
+            Would you like to sign up for the HVAC filter subscription service?
+            <a href="https://www.rheem.com"> Learn More</a><br>
+            <input type="radio" name="filtersubscription" value="yes" onclick="showOrHide('show')"> Yes
+            <input type="radio" name="filtersubscription" value="no"> No
+            <br><br>
+
+            Would you like to sign up for Quarterly Dosing Tablet subscription?
+            <a href="https://www.rheem.com"> Learn More</a><br>
+            <input type="radio" name="tabletsubscription" value="yes" onclick="showOrHide('show')"> Yes
+            <input type="radio" name="tabletsubscription" value="no"> No
+            <br><br>
+
+            <div id="form-container">
+
+                <div id="sq-walletbox">
+                    <!-- Placeholder for Apple Pay for Web button -->
+                    <button id="sq-apple-pay"></button>
+
+                    <!-- Placeholder for Masterpass button -->
+                    <button id="sq-masterpass"></button>
+
+                    <!-- Placeholder for Google Pay button-->
+                    <button id="sq-google-pay" class="button-google-pay"></button>
+
+                    <div id="sq-walletbox-divider">
+                        <span id="sq-walletbox-divider-label">Or</span>
+                        <hr />
+                    </div>
+                </div>
+
+                <div id="sq-ccbox">
+                    <!--
+            Be sure to replace the action attribute of the form with the path of
+            the Transaction API charge endpoint URL you want to POST the nonce to
+            (for example, "/process-card")
+            -->
+
+                    <fieldset>
+                        <span class="label"><font color="red">* </font>Card Number</span>
+                        <div id="sq-card-number">
+                            <input type="text" name="sq-card-number">
+                        </div>
+
+                        <div class="third">
+                            <span class="label"><font color="red">* </font>Exp</span>
+                            <div id="sq-expiration-date">
+                                <input type="text" name="sq-expiration-date">
+                            </div>
+                        </div>
+
+                        <div class="third">
+                            <span class="label"><font color="red">* </font>CVV</span>
+                            <div id="sq-cvv">
+                                <input type="text" name="sq-cvv">
+                            </div>
+                        </div>
+
+                        <div class="third">
+                            <span class="label"><font color="red">* </font>Postal</span>
+                            <div id="sq-postal-code">
+                                <input type="text" name="sq-postal-code">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <button id="sq-creditcard" class="button-credit-card">Pay</button>
+
+                    <div id="error"></div>
+
+                    <!--
+            After a nonce is generated it will be assigned to this hidden input field.
+            -->
+                    <input type="hidden" id="card-nonce" name="nonce">
+
+                </div> <!-- end #sq-ccbox -->
+            </div> <!-- end #form-container -->
+
+            <br><br>
+
+            <button class="btnSub">Submit</button>
+
+        </form>
+    </div>
+
+    <!--Basic JS functions-->
+    <script>
+        window.onload = function hideTheContainer() {
+            var x = document.getElementById("form-container");
+            x.style.display = "none"
+        }
+
+        function showOrHide(_val) {
+            var x = document.getElementById("form-container");
+            if (_val === 'show') {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
